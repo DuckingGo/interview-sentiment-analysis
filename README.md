@@ -45,3 +45,17 @@ Program akan menghasilkan file-file berikut:
 - `extract_keywords()`: Mengekstrak kata kunci penting
 - `generate_wordcloud()`: Membuat visualisasi word cloud
 - `plot_sentiment_distribution()`: Membuat grafik distribusi sentimen
+
+## Proses Flow
+
+1. Pengguna mengunggah file audio wawancara.
+2. Sistem melakukan transkripsi audio ke teks.
+3. Teks hasil transkripsi diproses untuk analisis lebih lanjut.
+4. Sistem menganalisis sentimen dari teks.
+5. Kata kunci penting diekstrak dari teks.
+6. Visualisasi hasil analisis dibuat (word cloud dan distribusi sentimen).
+7. Hasil akhir disimpan dalam format yang ditentukan.
+
+## Visualisasi
+
+![processing flow](/images/proses.svg)
