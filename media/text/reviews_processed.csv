@@ -1,0 +1,2 @@
+speaker,review,timestamp,sentiment,keywords
+Responden 1,hello hello test test hello hello test apakah kamu dapat mendengar saya,2025-07-26 07:03:03.712875,neutral,"['apakah', 'dapat', 'hello', 'kamu', 'mendengar', 'saya', 'test']"

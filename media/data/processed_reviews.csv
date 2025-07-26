@@ -1,0 +1,2 @@
+speaker,review,timestamp,cleaned_review,sentiment,keywords
+Responden 1," Hello, Hello, Test, Test, Hello, Hello, Test, Apakah kamu dapat mendengar saya?",2025-07-26 07:07:46.276261,hello hello test test hello hello test kamu dengar,neutral,"['hello', 'test', 'kamu', 'dengar']"
