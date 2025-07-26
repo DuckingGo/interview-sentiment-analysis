@@ -1,0 +1,47 @@
+# Sentiment Analysis dari Wawancara Audio
+
+## Proyek ini melakukan analisis sentimen secara otomatis dari rekaman wawancara berbahasa Indonesia. Sistem ini dapat:
+
+- Mentranskripsikan audio wawancara (format .ogg, .mp3, dll) menjadi teks
+- Menganalisis sentimen dari teks transkripsi
+- Mengekstrak kata kunci penting
+- Membuat visualisasi hasil analisis (word cloud dan distribusi sentimen)
+
+## Fitur Utama
+
+- Transkripsi Audio: Menggunakan model Whisper OpenAI untuk konversi audio ke teks
+- Analisis Sentimen: Menggunakan model RoBERTa khusus bahasa Indonesi
+- Ekstraksi Kata Kunci: Menggunakan TF-IDF dengan stopwords bahasa Indonesi
+- Word Cloud: Visualisasi kata-kata penting dalam wawancar
+- Visualisasi Sentimen: Distribusi sentimen dalam bentuk grafik batan
+- Export Otomatis: Menyimpan hasil dalam format CSV dan gambar
+
+## Output yang Dihasilkan
+
+Program akan menghasilkan file-file berikut:
+| file | Direktori | Deskripsi |
+| --- | --- | --- |
+| transkrip.txt | data/ | Teks hasil transkripsi audio wawancara |
+| keywords.csv | data/ | Kata kunci penting dari teks |
+| processed_reviews.csv | data/ | Teks yang telah diproses (cleaned) |
+| wordcloud.png | plots/ | Visualisasi word cloud dari teks |
+| sentiment_distribution.png | plots/ | Grafik distribusi sentimen |
+
+## Kelas dan Fungsi Utama
+
+### AudioTranscriber
+
+#### Menangani transkripsi audio ke teks:
+
+- transkrip_audio(file_path): Transkripsi file audio
+- save_transcription(): Menyimpan hasil transkripsi ke file
+
+### ReviewProcessor
+
+#### Melakukan analisis teks:
+
+- preprocess_text(): Membersihkan dan memproses teks
+- label_sentiment(): Menganalisis sentimen teks
+- extract_keywords(): Mengekstrak kata kunci penting
+- generate_wordcloud(): Membuat visualisasi word cloud
+- plot_sentiment_distribution(): Membuat grafik distribusi sentimen
